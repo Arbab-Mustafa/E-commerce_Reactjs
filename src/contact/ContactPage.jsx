@@ -9,25 +9,25 @@ const btnText = 'Send our Message';
 
 const contactList = [
   {
-    imgUrl: '/src/assets/images/icon/01.png',
+    imgUrl: '/images/icon/01.png',
     imgAlt: 'contact icon',
     title: 'Office Address',
     desc: 'UET, Taxila, Pakistan',
   },
   {
-    imgUrl: '/src/assets/images/icon/02.png',
+    imgUrl: '/images/icon/02.png',
     imgAlt: 'contact icon',
     title: 'Phone number',
     desc: '+92 123 456 7890',
   },
   {
-    imgUrl: '/src/assets/images/icon/03.png',
+    imgUrl: '/images/icon/03.png',
     imgAlt: 'contact icon',
     title: 'Send email',
     desc: 'arbabtest@32.com',
   },
   {
-    imgUrl: '/src/assets/images/icon/04.png',
+    imgUrl: '/images/icon/04.png',
     imgAlt: 'contact icon',
     title: 'Our website',
     desc: 'www.arbabmustafa.com',

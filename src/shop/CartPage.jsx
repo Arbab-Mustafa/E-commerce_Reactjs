@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react';
-import PageHeader from '../components/PageHeader';
-import { Link } from 'react-router-dom';
-import delImgUrl from '../assets/images/shop/del.png';
-import CheckoutPage from './CheckoutPage';
+import { useEffect, useState } from "react";
+import PageHeader from "../components/PageHeader";
+import { Link } from "react-router-dom";
+
+import delImgUrl from "/images/shop/del.png";
+
+import CheckoutPage from "./CheckoutPage";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const storedItems = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(storedItems);
   }, []);
 
@@ -18,13 +20,13 @@ const CartPage = () => {
   const handleIncrease = (items) => {
     items.quantity = items.quantity + 1;
     setCartItems([...cartItems]);
-    localStorage.setItem('cart', JSON.stringify(cartItems));
+    localStorage.setItem("cart", JSON.stringify(cartItems));
   };
   const handleDecrease = (items) => {
     if (items.quantity > 1) {
       items.quantity = items.quantity - 1;
       setCartItems([...cartItems]);
-      localStorage.setItem('cart', JSON.stringify(cartItems));
+      localStorage.setItem("cart", JSON.stringify(cartItems));
     }
   };
 
@@ -34,7 +36,7 @@ const CartPage = () => {
     updateLocalStorage(newCart);
   };
   const updateLocalStorage = (cart) => {
-    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
   };
 
   const cartSubtotal = cartItems.reduce((total, item) => {
@@ -44,7 +46,7 @@ const CartPage = () => {
   const orderTotal = cartSubtotal;
   return (
     <div>
-      <PageHeader title="Our Shop Cart" curPage={'Cart Page'} />
+      <PageHeader title="Our Shop Cart" curPage={"Cart Page"} />
       <div className="shop-cart padding-tb">
         <div className="container">
           <div className="section-wrapper">

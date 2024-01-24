@@ -1,5 +1,7 @@
-import React from 'react';
-import Data from '../products';
+/* eslint-disable no-unused-vars */
+import Data from "/public/products.json";
+
+/* eslint-disable react/prop-types */
 
 const ShopCategory = ({
   filterItems,
@@ -15,7 +17,7 @@ const ShopCategory = ({
       </div>
       <div>
         <button
-          className={`m-2 ${selectedCategory === 'All' ? 'bg-warning' : ''}`}
+          className={`m-2 ${selectedCategory === "All" ? "bg-warning" : ""}`}
           onClick={() => {
             setProducts(Data);
           }}
@@ -26,7 +28,7 @@ const ShopCategory = ({
           return (
             <button
               key={id}
-              className={`m-2 ${selectedCategory === val ? 'bg-warning' : ''}`}
+              className={`m-2 ${selectedCategory === val ? "bg-warning" : ""}`}
               onClick={() => filterItems(val)}
             >
               {val}

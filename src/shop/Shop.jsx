@@ -1,14 +1,14 @@
-/* eslint-disable no-unused-vars */
-import { useState } from 'react';
-import PageHeader from './../components/PageHeader';
-const ShowResult = 'Showing 01-12 of 139 Results';
-import Data from '../products';
-import ProductCards from './ProductCards';
-import Pagination from './Pagination';
-import Search from './Search';
-import ShopCategory from './ShopCategory';
-import PopularPost from './PopularPost';
-import Tags from './Tags';
+import { useState } from "react";
+import PageHeader from "./../components/PageHeader";
+const ShowResult = "Showing 01-12 of 139 Results";
+
+import ProductCards from "./ProductCards";
+import Pagination from "./Pagination";
+import Search from "./Search";
+import ShopCategory from "./ShopCategory";
+import PopularPost from "./PopularPost";
+import Tags from "./Tags";
+import Data from "/public/products.json";
 
 const Shop = () => {
   const [GridList, setGridList] = useState(true);
@@ -22,7 +22,7 @@ const Shop = () => {
     indexOfLastProduct
   );
   const paginate = (pageNumber) => setPage(pageNumber);
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const menuItems = [...new Set(Data.map((item) => item.category))];
   const filterItems = (curcat) => {
     const newItem = Data.filter((newVal) => {
@@ -44,7 +44,7 @@ const Shop = () => {
                   <p>{ShowResult}</p>
                   <div
                     className={`product-view-mode ${
-                      GridList ? 'gridActive' : 'listActive'
+                      GridList ? "gridActive" : "listActive"
                     }`}
                   >
                     <a className="grid" onClick={() => setGridList(!GridList)}>

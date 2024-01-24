@@ -64,10 +64,7 @@ const AboutUs = () => {
             {/*  */}
             <div className="col">
               <div className="instructor-thumb">
-                <img
-                  src="/src/assets/images/instructor/01.png"
-                  alt="instructor-pic"
-                />
+                <img src="/images/instructor/01.png" alt="instructor-pic" />
               </div>
             </div>
           </div>

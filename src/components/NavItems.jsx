@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo/logo.png';
+import logo from '/images/logo/logo.png';
 import { AuthContext } from '../context/AuthProvider';
 
 export const NavItems = () => {
@@ -30,7 +30,7 @@ export const NavItems = () => {
             <Link to="/sign-up" className="lab-btn me-3">
               <span>Create Account</span>
             </Link>
-            <Link to="/login"> {login ? 'Logout' : 'Login'}</Link>
+            <Link to="/login"> {login ? 'Login' : 'Logout'}</Link>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ export const NavItems = () => {
                 Create Accpunt
               </Link>
               <Link to="/login" className=" d-none d-md-block">
-                {login ? 'Logout' : 'Login'}
+                {login ? 'Login' : 'Logout'}
               </Link>
               {/*  */}
               <div

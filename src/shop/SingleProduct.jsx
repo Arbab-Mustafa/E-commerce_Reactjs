@@ -1,29 +1,38 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import ProductDisplay from './ProductDisplay';
-import Review from './Review';
-import PopularPost from './PopularPost';
-import Tags from './Tags';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import PageHeader from "../components/PageHeader";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import ProductDisplay from "./ProductDisplay";
+import Review from "./Review";
+import PopularPost from "./PopularPost";
+import Tags from "./Tags";
 
 const SingleProduct = () => {
   const [products, setProducts] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
-    fetch('/src/products.json')
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/products.json"); // Assuming the file is in the public folder
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
+
   // console.log(products);
   const product = products.filter((product) => product.id === id);
   // console.log(product);
   return (
     <div>
-      <PageHeader title={'Our Shop Product'} curPage={'Product Details'} />
+      <PageHeader title={"Our Shop Product"} curPage={"Product Details"} />
 
       <div className="shop-single paddig-tb  aside-bg">
         <div className="container">
@@ -39,15 +48,15 @@ const SingleProduct = () => {
                             className="mySwiper"
                             SwiperView={1}
                             spaceBetween={30}
-                            loop={'true'}
+                            loop={"true"}
                             autoplay={{
                               delay: 2000,
                               disableOnInteraction: false,
                             }}
                             modules={[Autoplay]}
                             navigation={{
-                              prevEl: '.pro-single-prev',
-                              nextEl: '.pro-single-next',
+                              prevEl: ".pro-single-prev",
+                              nextEl: ".pro-single-next",
                             }}
                           >
                             {product.map((product, i) => (

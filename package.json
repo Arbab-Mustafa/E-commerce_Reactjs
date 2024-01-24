@@ -21,6 +21,7 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
     "@types/bootstrap": "^5.2.10",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",

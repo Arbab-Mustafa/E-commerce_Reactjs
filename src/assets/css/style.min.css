@@ -5661,7 +5661,7 @@ button {
   width: 50px;
 }
 .banner-section {
-  background-image: url(../images/bg-img/01.jpg);
+  background-image: url(/images/bg-img/01.jpg);
   background-size: cover;
   padding-top: 170px;
 }
@@ -5981,7 +5981,7 @@ button {
   }
 }
 .banner-section.style-2 {
-  background-image: url(../images/bg-img/02.jpg);
+  background-image: url(/images/bg-img/02.jpg);
   padding-top: 175px;
 }
 .banner-section.style-2::before {
@@ -6008,7 +6008,7 @@ button {
   animation: bounce-1 5s infinite linear;
 }
 .banner-section.style-3 {
-  background-image: url(../images/bg-img/03.jpg);
+  background-image: url(/images/bg-img/03.jpg);
   background-position: left;
   padding: 170px 0;
   margin-top: 98px;
@@ -6024,7 +6024,7 @@ button {
   padding: 18px 40px;
 }
 .banner-section.style-4 {
-  background-image: url(../../assets/images/bg-img/06.jpg);
+  background-image: url(/images/bg-img/06.jpg);
   z-index: 1;
   padding-bottom: 100px;
 }
@@ -6120,7 +6120,7 @@ button {
   font-size: 22px;
 }
 .banner-section.style-5 {
-  background-image: url(../images/bg-img/08.jpg);
+  background-image: url(/images/bg-img/08.jpg);
   background-position: center;
   background-attachment: fixed;
   padding: 260px 0 200px;
@@ -6168,7 +6168,7 @@ button {
   box-shadow: 0 5px 10px rgba(16, 17, 21, 0.5);
 }
 .banner-section.style-6 {
-  background-image: url(../images/bg-img/09.jpg);
+  background-image: url(/images/bg-img/09.jpg);
   background-position: center;
   background-attachment: fixed;
   padding: 286px 0 200px;
@@ -6187,7 +6187,7 @@ button {
   font-size: 1.25rem;
 }
 .banner-section.style-7 {
-  background-image: url(../images/bg-img/14.jpg);
+  background-image: url(/images/bg-img/14.jpg);
   background-size: cover;
   background-position: right;
   margin-top: 98px;
@@ -6230,7 +6230,7 @@ button {
 }
 .pageheader-section {
   padding: 250px 0 100px;
-  background-image: url(../images/pageheader/bg/01.jpg);
+  background-image: url(/images/pageheader/bg/01.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6240,7 +6240,7 @@ button {
 }
 .pageheader-section.style-2 {
   padding-top: 250px;
-  background-image: url(../images/pageheader/bg/02.jpg);
+  background-image: url(/images/pageheader/bg/02.jpg);
 }
 @media (max-width: 991px) {
   .pageheader-section.style-2 {
@@ -6360,7 +6360,7 @@ button {
   color: #f79a3d;
 }
 .category-section.style-2 .section-wrapper .col .category-item .category-inner {
-  background: url(../../assets/images/category/bg/01.jpg) no-repeat;
+  background: url(/images/category/bg/01.jpg) no-repeat;
   background-size: cover !important;
 }
 .category-section.style-2
@@ -6393,49 +6393,49 @@ button {
   .col:nth-of-type(8n + 2)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/02.jpg) no-repeat;
+  background: url(/images/category/bg/02.jpg) no-repeat;
 }
 .category-section.style-2
   .section-wrapper
   .col:nth-of-type(8n + 3)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/03.jpg) no-repeat;
+  background: url(/images/category/bg/03.jpg) no-repeat;
 }
 .category-section.style-2
   .section-wrapper
   .col:nth-of-type(8n + 4)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/04.jpg) no-repeat;
+  background: url(/images/category/bg/04.jpg) no-repeat;
 }
 .category-section.style-2
   .section-wrapper
   .col:nth-of-type(8n + 5)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/05.jpg) no-repeat;
+  background: url(/images/category/bg/05.jpg) no-repeat;
 }
 .category-section.style-2
   .section-wrapper
   .col:nth-of-type(8n + 6)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/06.jpg) no-repeat;
+  background: url(/images/category/bg/06.jpg) no-repeat;
 }
 .category-section.style-2
   .section-wrapper
   .col:nth-of-type(8n + 7)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/07.jpg) no-repeat;
+  background: url(/images/category/bg/07.jpg) no-repeat;
 }
 .category-section.style-2
   .section-wrapper
   .col:nth-of-type(8n + 8)
   .category-item
   .category-inner {
-  background: url(../../assets/images/category/bg/08.jpg) no-repeat;
+  background: url(/images/category/bg/08.jpg) no-repeat;
 }
 @media (min-width: 992px) {
   .category-section.style-3 .section-header {
@@ -7974,7 +7974,7 @@ button {
 }
 .clients-section.style-2 .section-wrapper {
   height: 400px;
-  background: url(../../assets/images/clients/bg.png) no-repeat;
+  background: url(/images/clients/bg.png) no-repeat;
   background-position: center;
   background-size: 75% 100%;
 }
@@ -8346,7 +8346,7 @@ button {
   right: -50px;
 }
 .register-section {
-  background: url(../../assets/images/bg-img/07.jpg) no-repeat;
+  background: url(/images/bg-img/07.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }

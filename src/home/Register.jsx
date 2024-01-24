@@ -1,4 +1,3 @@
-import React from 'react';
 const subTitle = 'Save the Day';
 const title = (
   <h2 className="title">

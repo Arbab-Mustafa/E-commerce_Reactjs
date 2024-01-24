@@ -34,7 +34,7 @@ const CheckoutPage = () => {
         show={show}
         onHide={handleClose}
         animation={false}
-        className="modal fade "
+        className="modal fade"
         centered
       >
         <div className="modal-dialog"></div>

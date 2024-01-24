@@ -79,7 +79,7 @@ const SingleBlog = () => {
                                   your blog list so that I can assist you
                                   better.
                                 </p>
-                                <img src="/src/assets/images/blog/single/01.jpg" />
+                                <img src="/images/blog/single/01.jpg" />
                                 <p>
                                   {' '}
                                   As an AI programming assistant, I can provide
@@ -92,7 +92,7 @@ const SingleBlog = () => {
                                   better.
                                 </p>
                                 <div className="video-thumb">
-                                  <img src="/src/assets/images/blog/single/02.jpg" />
+                                  <img src="/images/blog/single/02.jpg" />
                                   <a href="#" className="video-button popup">
                                     <i className="icofont-ui-play"></i>
                                   </a>

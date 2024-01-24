@@ -1,22 +1,24 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
-import productData from '../products.json';
-import { Link } from 'react-router-dom';
-import SelectedCatagory from '../components/SelectedCatagory';
+import { useState } from "react";
+
+import { Link } from "react-router-dom";
+import SelectedCatagory from "../components/SelectedCatagory";
+import Data from "/public/products.json";
+
 const title = (
   <h2>
     Search Your One From <span>Thousand</span> of Product
   </h2>
 );
-const desc = 'We have a large number of products';
+const desc = "We have a large number of products";
 const bannerList = [
-  { iconName: 'icofont-users-alt-4', text: '1.5 Million Customers' },
-  { iconName: 'icofont-notification', text: 'More then 2000 Marchent' },
-  { iconName: 'icofont-globe', text: 'Buy Anything Online' },
+  { iconName: "icofont-users-alt-4", text: "1.5 Million Customers" },
+  { iconName: "icofont-notification", text: "More then 2000 Marchent" },
+  { iconName: "icofont-globe", text: "Buy Anything Online" },
 ];
 const Banner = () => {
-  const [searchInput, setSearchInput] = useState('');
-  const [filteredProducts, setFilteredProducts] = useState(productData);
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState(Data);
 
   const handleSearch = (e) => {
     const SearchTerm = e.target.value;
@@ -32,7 +34,7 @@ const Banner = () => {
         <div className="banner-content">
           {title}
           <form>
-            <SelectedCatagory select={'all'} />
+            <SelectedCatagory select={"all"} />
             <input
               type="search"
               name="search"
@@ -50,8 +52,8 @@ const Banner = () => {
             {searchInput &&
               filteredProducts.map((product, i) => (
                 <li key={i}>
-                  {' '}
-                  <Link to={`/shop/${product.id}`}>{product.name}</Link>{' '}
+                  {" "}
+                  <Link to={`/shop/${product.id}`}>{product.name}</Link>{" "}
                 </li>
               ))}
           </ul>
